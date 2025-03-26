@@ -16,7 +16,7 @@ img {
 }
 
 body {
-    background-image: url('og2.jpg');
+    background-image: url('style/og2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 40% ;
