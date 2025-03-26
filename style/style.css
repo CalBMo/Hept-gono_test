@@ -5,8 +5,6 @@ body {
     margin: 0;
     background-color: #000000;
     cursor: help;
-    overflow-x: auto;
-    overflow-y: auto;
     background-image: url('og2.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -15,7 +13,9 @@ body {
 
 .container {
     position: relative;
-    display: inline-block; /* Ensures the container wraps tightly around the image */
+    display: inline-block;
+    width: 80%; /* Adjust the width to make the container smaller */
+    max-width: 1212px; /* Optional: Set a maximum width */
 }
 
 img {
