@@ -66,3 +66,50 @@ button:hover {
     position: absolute;
     transform: translateX(-190%) translateY(-153%);
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 90%;
+        max-height: auto;
+    }
+
+    button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .b1 {
+        transform: translateX(0%) translateY(-150%);
+    }
+
+    .b2 {
+        transform: translateX(100%) translateY(-100%);
+    }
+
+    .b3 {
+        transform: translateX(120%) translateY(20%);
+    }
+
+    .b4 {
+        transform: translateX(50%) translateY(120%);
+    }
+
+    .b5 {
+        transform: translateX(-50%) translateY(120%);
+    }
+
+    .b6 {
+        transform: translateX(-120%) translateY(20%);
+    }
+
+    .b7 {
+        transform: translateX(-100%) translateY(-100%);
+    }
+}
