@@ -86,30 +86,37 @@ button:hover {
     }
 
     .b1 {
-        transform: translateX(0%) translateY(-150%);
+        position: absolute;
+        transform: translateX(0%) translateY(-245%);
     }
-
+    
     .b2 {
-        transform: translateX(100%) translateY(-100%);
+        position: absolute;
+        transform: translateX(190%) translateY(-153%);
     }
-
+    
     .b3 {
-        transform: translateX(120%) translateY(20%);
+        position: absolute;
+        transform: translateX(238%) translateY(55%);
     }
-
+    
     .b4 {
-        transform: translateX(50%) translateY(120%);
+        position: absolute;
+        transform: translateX(105%) translateY(220%);
     }
-
+    
     .b5 {
-        transform: translateX(-50%) translateY(120%);
+        position: absolute;
+        transform: translateX(-105%) translateY(220%);
     }
-
+    
     .b6 {
-        transform: translateX(-120%) translateY(20%);
+        position: absolute;
+        transform: translateX(-238%) translateY(55%);
     }
-
+    
     .b7 {
-        transform: translateX(-100%) translateY(-100%);
+        position: absolute;
+        transform: translateX(-190%) translateY(-153%);
     }
 }
