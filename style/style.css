@@ -15,7 +15,7 @@ body {
     position: relative;
     display: inline-block;
     width: 80%; /* Adjust the width to make the container smaller */
-    max-width: 1212px; /* Optional: Set a maximum width */
+    max-width: 1000px; /* Optional: Set a maximum width */
 }
 
 img {
