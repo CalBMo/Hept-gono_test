@@ -1,0 +1,37 @@
+html {
+    background-color: #000000;
+    color: rgb(218, 218, 218);
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 20px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    background-image: url('og.png');
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#title {
+    text-align: center;
+    font-size: large;
+    margin: 0 auto;
+    display: block;
+    font-weight: bolder;
+}
+
+#introduction {
+    font-size: small;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#text {
+    text-indent: 3em;
+}
+
+#keywords {
+    font-size: small;
+    font-weight: lighter;
+    font-style: italic;
+}

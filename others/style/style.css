@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    cursor: help;
+    overflow: auto;
+}
+
+img {
+    max-width: 1212px;
+    max-height: 1212px;
+}
+
+body {
+    background-image: url('og2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 40% ;
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 100%;
+    transition: background-color 0.7s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffffff00;
+    transition: background-color 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.b1 {
+    position: absolute;
+    transform: translateX(0%) translateY(-245%);
+}
+
+.b2 {
+    position: absolute;
+    transform: translateX(190%) translateY(-153%);
+}
+
+.b3 {
+    position: absolute;
+    transform: translateX(238%) translateY(55%);
+}
+
+.b4 {
+    position: absolute;
+    transform: translateX(105%) translateY(220%);
+}
+
+.b5 {
+    position: absolute;
+    transform: translateX(-105%) translateY(220%);
+}
+
+.b6 {
+    position: absolute;
+    transform: translateX(-238%) translateY(55%);
+}
+
+.b7 {
+    position: absolute;
+    transform: translateX(-190%) translateY(-153%);
+}

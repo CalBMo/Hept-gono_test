@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#9134C - Mirage Protocol</title>
+    <script>
+        function validatePassword(buttonId) {
+            const passwords = {
+                p1: "UNCANNY",
+                p2: "PARANOIA",
+                p3: "DISTRESSING",
+                p4: "SAVAGE",
+                p5: "ERRADICATION",
+                p6: "NESTING",
+                p7: "OPRESSION"
+            };
+
+            function normalizeInput(input) {
+                return input.toLowerCase();
+            }
+
+            for (let key in passwords) {
+                passwords[key] = normalizeInput(passwords[key]);
+            }
+
+            const userPassword = prompt("Enter Code");
+            if (normalizeInput(userPassword) === passwords[buttonId]) {
+                window.location.href = buttonId + ".html";
+            } else {
+                alert("try again");
+            }
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="style/style.css">
+<body>
+    <img src="style/heptagrama.png" alt="Heptágono">
+    <button class="b1" onclick="validatePassword('p1')"></button>
+    <button class="b2" onclick="validatePassword('p2')"></button>
+    <button class="b3" onclick="validatePassword('p3')"></button>
+    <button class="b4" onclick="validatePassword('p4')"></button>
+    <button class="b5" onclick="validatePassword('p5')"></button>
+    <button class="b6" onclick="validatePassword('p6')"></button>
+    <button class="b7" onclick="validatePassword('p7')"></button>
+</body>
+</html>
