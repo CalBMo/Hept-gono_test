@@ -7,7 +7,7 @@ html {
     padding: 20px;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
-    background-image: url('style/og.png');
+    background-image: url('og.png');
     background-attachment: fixed;
     background-position: center;
 }
