@@ -13,17 +13,25 @@ body {
     background-position: 50% 40% ;
 }
 
+.container {
+    position: relative;
+    display: inline-block; /* Ensures the container wraps tightly around the image */
+}
+
 img {
-    max-width: 1212px;
-    max-height: 1212px;
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    display: block;
 }
 
 button {
-    width: 150px;
-    height: 150px;
+    width: 13.2%; /* Adjust size relative to the container */
+    aspect-ratio: 1; /* Maintain circular shape */
     background-color: #000000;
-    border-radius: 100%;
+    border-radius: 50%;
     transition: background-color 0.7s ease-in-out;
+    position: absolute; /* Position relative to the container */
+    border-color: #000000;
 }
 
 button:hover {
@@ -32,91 +40,45 @@ button:hover {
     cursor: pointer;
 }
 
+/* Position buttons relative to the image */
 .b1 {
-    position: absolute;
-    transform: translateX(0%) translateY(-245%);
+    top: 19.5%; /* Adjust percentages as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .b2 {
-    position: absolute;
-    transform: translateX(190%) translateY(-153%);
+    top: 31%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
 .b3 {
-    position: absolute;
-    transform: translateX(238%) translateY(55%);
+    top: 56.7%;
+    left: 81.4%;
+    transform: translate(-50%, -50%);
 }
 
 .b4 {
-    position: absolute;
-    transform: translateX(105%) translateY(220%);
+    top: 77.2%;
+    left: 64%;
+    transform: translate(-50%, -50%);
 }
 
 .b5 {
-    position: absolute;
-    transform: translateX(-105%) translateY(220%);
+    top: 77.2%;
+    left: 36%;
+    transform: translate(-50%, -50%);
 }
 
 .b6 {
-    position: absolute;
-    transform: translateX(-238%) translateY(55%);
+    top: 56.7%;
+    left: 18.5%;
+    transform: translate(-50%, -50%);
 }
 
 .b7 {
-    position: absolute;
-    transform: translateX(-190%) translateY(-153%);
-}
-
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        overflow-x: hidden;
-    }
-
-    img {
-        max-width: 90%;
-        max-height: auto;
-    }
-
-    button {
-        width: 100px;
-        height: 100px;
-    }
-
-    .b1 {
-        position: absolute;
-        transform: translateX(0%) translateY(-245%);
-    }
-    
-    .b2 {
-        position: absolute;
-        transform: translateX(190%) translateY(-153%);
-    }
-    
-    .b3 {
-        position: absolute;
-        transform: translateX(238%) translateY(55%);
-    }
-    
-    .b4 {
-        position: absolute;
-        transform: translateX(105%) translateY(220%);
-    }
-    
-    .b5 {
-        position: absolute;
-        transform: translateX(-105%) translateY(220%);
-    }
-    
-    .b6 {
-        position: absolute;
-        transform: translateX(-238%) translateY(55%);
-    }
-    
-    .b7 {
-        position: absolute;
-        transform: translateX(-190%) translateY(-153%);
-    }
+    top: 31.1%;
+    left: 24.9%;
+    transform: translate(-50%, -50%);
 }
