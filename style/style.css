@@ -48,7 +48,7 @@ button {
     border-radius: 50%;
     transition: background-color 0.7s ease-in-out;
     position: absolute; /* Position relative to the container */
-    border-color: #000000;
+    border: none;
 }
 
 button:hover {
@@ -98,4 +98,15 @@ button:hover {
     top: 31.1%;
     left: 24.9%;
     transform: translate(-50%, -50%);
+}
+
+.b8 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff00;
+}
+
+.b8:hover {
+    cursor: help;
 }
