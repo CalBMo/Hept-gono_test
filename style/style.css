@@ -11,6 +11,23 @@ body {
     background-position: 50% 40% ;
 }
 
+html::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 184, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none; /* Ensure it doesn't block interactions */
+}
+
 .container {
     position: relative;
     display: inline-block;

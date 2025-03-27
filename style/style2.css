@@ -1,15 +1,34 @@
 html {
     background-color: #000000;
-    color: rgb(218, 218, 218);
     margin: 0 auto;
     max-width: 800px;
     line-height: 1.6;
     padding: 20px;
-    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: 0 0 4px #C8C8C8;
     letter-spacing: 2px;
     background-image: url('/style/og.png?v=2');
     background-attachment: fixed;
     background-position: center;
+}
+
+html::after {
+    content: "";
+    position: fixed; /* Change to fixed to ensure it stays in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* Ensure it always fills the viewport height */
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 184, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    background-size: cover; /* Ensures the gradient always fills the screen */
+    pointer-events: none;
 }
 
 #title {
