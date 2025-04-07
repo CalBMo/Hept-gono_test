@@ -13,19 +13,20 @@ body {
 
 html::after {
     content: "";
-    position: absolute;
+    position: fixed; /* Change to fixed to ensure it stays in place while scrolling */
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; /* Ensure it always fills the viewport height */
     background: repeating-linear-gradient(
-      0deg,
-      rgba(0, 184, 0, 0.15),
-      rgba(0, 0, 0, 0.15) 1px,
-      transparent 1px,
-      transparent 2px
+        0deg,
+        rgba(0, 184, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 10px,
+        transparent 1px,
+        transparent 3px
     );
-    pointer-events: none; /* Ensure it doesn't block interactions */
+    background-size: cover; /* Ensures the gradient always fills the screen */
+    pointer-events: none;
 }
 
 .container {

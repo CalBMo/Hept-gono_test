@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: "Courier New", Courier, monospace;
-            background-color: #000;
+            background-color: rgb(0, 0, 0);
             color: #0f0;
             margin: 0;
             padding: 20px;
@@ -45,9 +45,9 @@
             background: repeating-linear-gradient(
                 0deg,
                 rgba(0, 184, 0, 0.15),
-                rgba(0, 0, 0, 0.15) 1px,
+                rgba(0, 0, 0, 0.15) 10px,
                 transparent 1px,
-                transparent 2px
+                transparent 3px
             );
             background-size: cover; /* Ensures the gradient always fills the screen */
             pointer-events: none;
@@ -68,8 +68,10 @@
 
 </head>
 <body>
-    <div class="header">Diary Log █████████ - Simulacrum</div>
-
+    <hr style="border-color: green;">
+    <hr style="border-color: green;">        
+    <div class="header">Command Center and Log Library - Simulacrum System</div>
+    <hr style="border-color: green;">
     <hr style="border-color: green;">
 
     <div class="entry">
@@ -121,65 +123,16 @@
         </div>
     
     <p></p>
-    <hr style="border-color: green;">
-    
-    <div class="entry">
-        <div class="entry-title">[RECOVERED LOG - ███] Forged Death</div>
-        <div class="entry-content">
-            It's been about three years since I've moved in with Armina, I changed my appearance, and well, I look older anyways. I've been able to keep the research going and the Simulacrum haven't been able to find me since. Yesterday Armina had an idea, just to be sure we wouldn't be bothered, of forging my death. Today we threw a car into a ditch and threw it on fire. I made sure to leave my ID and some of my stuff in there, just in the right place for someone to recognize. I'll keep the Simulacrum ID, but the rest is gone. I'll keep the research going and get myself some new documents.
-        </div>
-    </div>
-
-    <div class="entry"></div>
-        <div class="entry-title">[RECOVERED LOG - ███] Personal Reflections</div>
-        <div class="entry-content">
-            Today was a challenging day. The system anomalies are becoming more frequent, and the resolution protocols seem inadequate. I feel the weight of responsibility growing heavier with each passing moment. Must find a way to stabilize the situation.
-        </div>
-    </div>
-
-    <div class="entry">
-        <div class="entry-title">[RECOVERED LOG - ███] Observations</div>
-        <div class="entry-content">
-            The interference patterns suggest an external source. Could it be deliberate? The thought is unsettling. I will need to run more diagnostics tomorrow to confirm my suspicions.
-        </div>
-    </div>
-
-    <div class="entry">
-        <div class="entry-title">[RECOVERED LOG - ███] Theory of The 7 Fears</div>
-        <div class="entry-content">
-            Been researching more fear related theories and I'm putting this here just for the record, even if It applies more to the corporate world. It was developed by Jansei Demartini and says the seven fears revolve around different aspects of life that can hold a person back from growth and fulfillment. The fear of not knowing enough can lead to hesitation in pursuing opportunities due to self-doubt about one's intelligence or expertise. Similarly, the fear of failure in a career can prevent individuals from taking risks necessary for success. Financial insecurity, or the fear of losing money, may keep people trapped in unfulfilling jobs rather than following their passions. The fear of losing the respect of loved ones can cause individuals to conform to expectations rather than embracing their true selves, just as the fear of social rejection discourages authenticity and bold action. Doubts about physical capability or appearance can hinder confidence in both personal and professional pursuits. Lastly, the fear of breaking moral or ethical codes imposed by authority figures may create inner conflict, making it difficult to challenge societal norms or carve a unique path in life. Understanding these fears allows for conscious effort to overcome them, leading to greater personal empowerment... But not really anything paranormal in this.
-        </div>
-    </div>
-
-    <div class="entry">
-        <div class="entry-title">[RECOVERED LOG - ███] Work Problems</div>
-        <div class="entry-content">
-            People at Simulacrum Inc. are starting to suspect I'm up to something. I've been recording people in secret when we talk, and when we go on missions, and just, everytime... It's good to keep a record of everything, but I think they're starting to notice. I need to be more careful.
-        </div>
-    </div>
-
-    <div class="entry">
-        <div class="entry-title">[RECOVERED LOG - ███] Kids</div>
-        <div class="entry-content">
-            A very quick one today as I need to get back to work. I seem to be making good progress! The kids here love me, and they love that me and Armina are together. I think I'm starting to like this place, and more than anything, If I can play my cards right, all those kids will be good help for the ritual when the time comes.
-        </div>
-    </div>
-
-    <div class="footer">
-        End of Log Recoveries - Simulacrum System
-    </div>
-
-    <h2></h2>
     
     <hr style="border-color: green;">
     <hr style="border-color: green;">
-
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
+<section style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <hr style="border-color: green;">        
     <body>
         <p></p>
-        <div class="header">- LOG ARCHIVES -</div>
-    
+        <section onclick="toggleContent(this)" style="cursor: help; text-align: center; font-size: 1.5em; margin-bottom: 20px; text-decoration: underline;">- LOG ARCHIVES -</section>
+        <div style="display: none;">
         <hr style="border-color: green;">
         <p></p>
 
@@ -198,7 +151,6 @@
             </div>
             <hr style="border-color: green;">
             <p></p>
-        </div>
         </div>
         </div>
 
@@ -222,7 +174,6 @@
             <p></p>
         </div>    
         </div>
-        </div>
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     
@@ -245,7 +196,7 @@
         <div class="entry">
             <div class="entry-title" onclick="toggleContent(this)" style="cursor: help;">[LOG - 005] Alchemy</div>
             <div class="entry-content" style="display: none;">
-            <p>Continuing on, this will be all about Alchemy. It is is an ancient branch of natural philosophy, a philosophical and protoscientific tradition that was historically practised in China, India, the Muslim world, and Europe. It's all about transformation, purification, transmutation and perfection of certain materials, but it has evolved a long way after that. Some people still practice it now-a-days, not me tho, don't have the right equipments and, to be honest I don't have a lot of interest in it.</p>
+            <p>Continuing on, this will be all about Alchemy. It is an ancient branch of natural philosophy, a philosophical and protoscientific tradition that was historically practised in China, India, the Muslim world, and Europe. It's all about transformation, purification, transmutation and perfection of certain materials, but it has evolved a long way after that. Some people still practice it now-a-days, not me tho, don't have the right equipments and, to be honest I don't have a lot of interest in it.</p>
             <p>Once again, I'll leave all my research bellow If I ever need it.</p>
             <p style="color: red; cursor:not-allowed">[LOG - 005 / Studies / FAILED TO LOAD]</p>
             <img src="simbulos/transmutationcircle.png" style="max-width: 100%; height: auto;" alt="FAILED TO LOAD IMAGE">
@@ -256,7 +207,6 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
         </div>
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -285,7 +235,6 @@
             <p></p>
         </div>    
         </div>
-        </div>
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -305,8 +254,7 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
-        </div>        
+        </div>       
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     
@@ -335,8 +283,7 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
-        </div>        
+        </div>       
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -357,8 +304,7 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
-        </div>        
+        </div>       
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -377,8 +323,7 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
-        </div>        
+        </div>       
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -437,8 +382,7 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
-        </div>  
+        </div> 
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->  
     
@@ -469,8 +413,7 @@
             <hr style="border-color: green;">
             <p></p>
         </div>    
-        </div>
-        </div>  
+        </div> 
 
 <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
     
@@ -495,7 +438,6 @@
         <p></p>
     </div>    
     </div>
-    </div>  
 
 <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
     
@@ -556,7 +498,6 @@
         <p></p>
     </div>    
     </div>
-    </div>  
 
 <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
     
@@ -581,7 +522,6 @@
         <hr style="border-color: green;">
         <p></p>
     </div>    
-    </div>
     </div>  
 
 <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
@@ -600,7 +540,6 @@
         <p></p>
     </div>    
     </div>
-    </div>  
 
 <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
 
@@ -618,7 +557,6 @@
         <p></p>
     </div>    
     </div>
-    </div>  
 
 <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
     
@@ -667,10 +605,70 @@
         <p></p>
     </div>    
     </div>
-    </div>  
+    </div>
+    <hr style="border-color: green;">        
+</section>
 
-<!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->     
+<hr style="border-color: green;">
+<hr style="border-color: green;">        
+
+<section style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+
+
+
+
 
 <hr style="border-color: green;">        
 </body>
 </html>
+
+<section onclick="toggleContent(this)" style="cursor: help; text-align: center; font-size: 1.5em; margin-bottom: 20px; text-decoration: underline;">RECOVERED LOGS</section>
+    <div style="display: none;">
+        <h1></h1>
+        <div class="entry">
+            <div class="entry-title">[RECOVERED LOG - ███] Forged Death</div>
+            <div class="</div>entry-content">
+                It's been about three years since I've moved </div>in with Armina, I changed my appearance, and well, I look older anyways. I've been able to keep the research going and the Simulacrum haven't been able to find me since. Yesterday Armina had an idea, just to be sure we wouldn't be bothered, of forging my death. Today we threw a car into a ditch and threw it on fire. I made sure to leave my ID and some of my stuff in there, just in the right place for someone to recognize. I'll keep the Simulacrum ID, but the rest is gone. I'll keep the research going and get myself some new documents.
+        </div>
+
+        <div class="entry"></div>
+            <div class="entry-title">[RECOVERED LOG - ███] Personal Reflections</div>
+            <div class="entry-content">
+                Today was a challenging day. The system anomalies are becoming more frequent, and the resolution protocols seem inadequate. I feel the weight of responsibility growing heavier with each passing moment. Must find a way to stabilize the situation.    
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">[RECOVERED LOG - ███] Observations</div>
+            <div class="entry-content">
+                The interference patterns suggest an external source. Could it be deliberate? The thought is unsettling. I will need to run more diagnostics tomorrow to conf</div>irm my suspicions.
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">[RECOVERED LOG - ███] Theory of The 7 Fears</div>
+            <div class="entry-content">
+                Been researching more fear related theories and I'm putting this here just for the record, even if It applies more to the corporate world. It was developed by Jansei Demartini and says the seven fears revolve around </div>different aspects of life that can hold a person back from growth and fulfillment. The fear of not knowing enough can lead to hesitation in pursuing opportunities due to self-doubt about one's intelligence or expertise. Similarly, the fear of failure in a career can prevent individuals from taking risks necessary for success. Financial insecurity, or the fear of losing money, may keep people trapped in unfulfilling jobs rather than following their passions. The fear of losing the respect of loved ones can cause individuals to conform to expectations rather than embracing their true selves, just as the fear of social rejection discourages authenticity and bold action. Doubts about physical capability or appearance can hinder confidence in both personal and professional pursuits. Lastly, the fear of breaking moral or ethical codes imposed by authority figures may create inner conflict, making it difficult to challenge societal norms or carve a unique path in life. Understanding these fears allows for conscious effort to overcome them, leading to greater personal empowerment... But not really anything paranormal in this.
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">[RECOVERED LOG - ███] Work Problems</div>
+            <div class="entry-content">
+                People at Simulacrum Inc. are starting to suspect I'm up to something. I've been recording people in secret when we talk, and when we go on missions, and just, everytime... It's good to keep a record of everything, but I think they're starting to notice. I need to be more careful.
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">[RECOVERED LOG - ███] Kids</div>
+            <div class="entry-content">
+                A very quick one today as I need to get back to work. I seem to be making good progress! The kids here love me, and they love that me and Armina are together. I think I'm starting to like this place, and more than anything, If I can play my cards right, all those kids will be good help for the ritual when the time comes.
+        </div>
+
+        <div class="footer">
+            End of Log Recoveries - Simulacrum System
+        </div>
+        </div>
+        </div>
+        </div>
+        <hr style="border-color: green;">    
+    </section>
+    <hr style="border-color: green;">
+    <hr style="border-color: green;">        
