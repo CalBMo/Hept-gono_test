@@ -22,7 +22,7 @@ html::after {
     height: 100vh; /* Ensure it always fills the viewport height */
     background: repeating-linear-gradient(
         0deg,
-        rgba(255, 0, 0, 0.252),
+        rgba(99, 99, 99, 0.252),
         rgba(35, 0, 0, 0.262) 15px,
         transparent 1px,
         transparent 10px

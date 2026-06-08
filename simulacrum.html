@@ -34,6 +34,16 @@
             font-size: 0.9em;
             color: #888;
         }
+        .doc-link {
+            display: block;
+            margin: 12px 0 12px 20px;
+            color: #0f0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .doc-link:hover {
+            color: #ff0;
+        }
 
         html::after {
             content: "";
@@ -473,5 +483,24 @@
         </div>
     </div>
     </section>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<section style="display: flexbox; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <hr style="border-color: green;">
+    <section onclick="toggleContent(this)" style="cursor: help; text-align: left; font-size: 1.5em; margin-bottom: 20px; text-decoration: underline; color:#ff0;">DOCUMENT ARCHIVES</section>
+    <div style="display: none;">
+        <hr style="border-color: green;">
+        <div class="entry">
+            <a class="doc-link" href="pdf-bandas.html">[DOC - 001] Bandas Além do Véu</a>
+            <a class="doc-link" href="pdf-protocolo-regras.html">[DOC - 002] Protocolo Miragem — Livro de Regras</a>
+            <a class="doc-link" href="pdf-ficha.html">[DOC - 003] Protocolo Miragem — Ficha</a>
+        </div>
+        <div class="footer">
+            End of Document Archives - Cadman Basileus Memory System
+        </div>
+    </div>
+</section>
+
     <hr style="border-color: green;">
     <hr style="border-color: green;">        

@@ -4,32 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#9134C - Mirage Protocol</title>
     <script>
-        function validatePassword(buttonId) {
-            const passwords = {
-                inquietante: "UNCANNY",
-                paranóia: "PARANOIA",
-                angustia: "DISTRESSING",
-                selvagem: "SAVAGE",
-                erradicação: "ERRADICATION",
-                aninhamento: "NESTING",
-                opressor: "OPRESSION",
-                simulacrum: "MIRAGE"
-            };
-
-            function normalizeInput(input) {
-                return input.toLowerCase();
-            }
-
-            for (let key in passwords) {
-                passwords[key] = normalizeInput(passwords[key]);
-            }
-
-            const userPassword = prompt("Enter Code");
-            if (normalizeInput(userPassword) === passwords[buttonId]) {
-                window.location.href = buttonId + ".html";
-            } else {
-                alert("try again");
-            }
+        function redirectPage(pageName) {
+            window.location.href = pageName + ".html";
         }
     </script>
 </head>
@@ -37,14 +13,14 @@
 <body>
     <div class="container">
         <img src="style/heptagrama.png" alt="Heptágono">
-        <button class="b1" onclick="validatePassword('inquietante')"></button>
-        <button class="b2" onclick="validatePassword('paranóia')"></button>
-        <button class="b3" onclick="validatePassword('angustia')"></button>
-        <button class="b4" onclick="validatePassword('selvagem')"></button>
-        <button class="b5" onclick="validatePassword('erradicação')"></button>
-        <button class="b6" onclick="validatePassword('aninhamento')"></button>
-        <button class="b7" onclick="validatePassword('opressor')"></button>
-        <button class="b8" onclick="validatePassword('simulacrum')"></button>
+        <button class="b1" onclick="redirectPage('inquietante')"></button>
+        <button class="b2" onclick="redirectPage('paranóia')"></button>
+        <button class="b3" onclick="redirectPage('angustia')"></button>
+        <button class="b4" onclick="redirectPage('selvagem')"></button>
+        <button class="b5" onclick="redirectPage('aninhamento')"></button>
+        <button class="b6" onclick="redirectPage('erradicação')"></button>
+        <button class="b7" onclick="redirectPage('opressor')"></button>
+        <button class="b8" onclick="redirectPage('simulacrum')"></button>
     </div>
 </body>
 </html>
